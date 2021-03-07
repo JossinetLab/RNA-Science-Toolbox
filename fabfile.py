@@ -37,7 +37,7 @@ def python(manager="conda"):
         local('pip install tornado')
         local('pip install docker')
     else:
-        print "You need to install the following Python packages:"
+        print ("You need to install the following Python packages:")
         print ("pandas")
         print ("pymongo")
         print ("pysam")
@@ -92,7 +92,7 @@ def jupyter(manager="conda"):
     elif manager == "pip":
         local("pip install jupyter")
     else:
-        print "You need to install Jupyter(http://jupyter.org)"
+        print ("You need to install Jupyter(http://jupyter.org)")
 
 def update():
     """
